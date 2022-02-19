@@ -6,18 +6,49 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Detail</title>
+    <!--INTERNAL CSS-->
+    <style>
+        body{
+            height: 100%;
+            width: 100%;
+        }
+        .container{
+            height: 100%;
+            width: 100%;
+        }
+        .logo{
+            height: 60px;
+            width: 60px;
+        }
+        .RadissonImage{
+            height: 500px;
+            width: 500px;
+        }
+        .social{
+            height: 20px;
+            width: 22px;
+        }
+
+    </style>
 </head>
 
 <body>
     <div class="container">
+        <!--HEADER STARTS-->
+        <header>
         <div class="header">
-            <a href="index.html"><img src="assests/images/logo.png" alt="logo" height="150px" width="200px"></a>
+            <a href="index.html"><img class="logo" src="assests/images/logo.png" alt="logo" height="150px" width="200px"></a>
             <a href="login.html" target="_self">Login</a>
         </div>
+        </header>
+        <!--HEADER ENDS-->
 
+
+        <!--SECTION STARTS-->
+        <section>
         <div class="content">
              
-            <img src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg"
+            <img class="RadissonImage" src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg"
                 alt="Radisson Blu Hotel">
             <form action="payment.html">
                 <label for="Adults">Adults: </label>
@@ -57,20 +88,23 @@
             <!--DESCRIPTION ENDS-->
 
         </div>
+        </section>
 
 
         <!--FOOTER STARTS-->
+        <footer>
         <div class="footer">
             <a href="contact.html" target="_self">Contact Us</a>
             <div class="socialMedia">
-                <a href="https://www.facebook.com" target="_blank"><img src="assests/images/facebook.png" alt="facebook" height="20px" width="22px"></a>
-                <a href="https://www.instagram.com" target="_blank"><img src="assests/images/instagram.png" alt="instagram" height="20px" width="22px"></a>
-                <a href="https://twitter.com" target="_blank"><img src="assests/images/twitter.png" alt="twitter" height="20px" width="22px"></a>
+                <a class="socail" href="https://www.facebook.com" target="_blank"><img src="assests/images/facebook.png" alt="facebook" height="20px" width="22px"></a>
+                <a class="socail" href="https://www.instagram.com" target="_blank"><img src="assests/images/instagram.png" alt="instagram" height="20px" width="22px"></a>
+                <a class="socail" href="https://twitter.com" target="_blank"><img src="assests/images/twitter.png" alt="twitter" height="20px" width="22px"></a>
             </div>
             <div class="footerText">
                 <p>© 2020 ROOM SEACRH PVT. LTD.</p>
             </div>
         </div>
+        </footer>
         <!--FOOTER ENDS-->
 
     </div>
