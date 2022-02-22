@@ -6,6 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Detail</title>
+<!--FONT FAMILY-UBUNTU-->
+<link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+
     <!--INTERNAL CSS-->
     <style>
         body{
@@ -13,6 +16,11 @@
             width: 100%;
             margin: 0;
             background: #e0e0e0;
+            font-family: 'Ubuntu', sans-serif;
+        }
+        section{
+            margin-bottom: 80px;
+            margin-top: 80px;
         }
         .container{
             height: 100%;
@@ -33,9 +41,25 @@
         }
         header{
             background-color: rosybrown;
+            position: fixed;
+            width: 100%;
+            top: 0px;
         }
         footer{
             background-color: rosybrown;
+            position: fixed;
+            width: 100%;
+            bottom: 0px;
+        }
+        .header{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .footer{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
         }
         .RadissonImage{
             margin-top: 2%;
@@ -53,6 +77,22 @@
             margin-top: 1%;
             margin-bottom: 2% ;
         }
+        .logging{
+            margin-right: 10px;
+            text-decoration: none;
+            color: black;
+        }
+        .socialMedia{
+            margin-right: 10px;
+        }
+        .ContactUs{
+            margin-left: 10px;
+        }
+        .ContactUs a{
+            text-decoration: none;
+            color:black ;
+        }
+
 
     </style>
 </head>
@@ -63,7 +103,7 @@
         <header>
         <div class="header">
             <a href="index.html"><img class="logo" src="assests/images/logo.png" alt="logo" height="150px" width="200px"></a>
-            <a href="login.html" target="_self">Login</a>
+            <a class="logging" href="login.html" target="_self">Login</a>
         </div>
         </header>
         <!--HEADER ENDS-->
@@ -122,15 +162,22 @@
         <!--FOOTER STARTS-->
         <footer>
         <div class="footer">
+            <div class="ContactUs">
             <a href="contact.html" target="_self">Contact Us</a>
-            <div class="socialMedia">
-                <a class="socail" href="https://www.facebook.com" target="_blank"><img src="assests/images/facebook.png" alt="facebook" height="20px" width="22px"></a>
-                <a class="socail" href="https://www.instagram.com" target="_blank"><img src="assests/images/instagram.png" alt="instagram" height="20px" width="22px"></a>
-                <a class="socail" href="https://twitter.com" target="_blank"><img src="assests/images/twitter.png" alt="twitter" height="20px" width="22px"></a>
-            </div>
+                </div>
+
+
             <div class="footerText">
                 <p>© 2020 ROOM SEACRH PVT. LTD.</p>
             </div>
+
+
+            <div class="socialMedia">
+                <a class="social" href="https://www.facebook.com" target="_blank"><img src="assests/images/facebook.png" alt="facebook" height="20px" width="22px"></a>
+                <a class="social" href="https://www.instagram.com" target="_blank"><img src="assests/images/instagram.png" alt="instagram" height="20px" width="22px"></a>
+                <a class="social" href="https://twitter.com" target="_blank"><img src="assests/images/twitter.png" alt="twitter" height="20px" width="22px"></a>
+            </div>
+            
         </div>
         </footer>
         <!--FOOTER ENDS-->

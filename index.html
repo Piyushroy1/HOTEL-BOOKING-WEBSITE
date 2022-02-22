@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Index</title>
+<!--FONT FAMILY-UBUNTU-->
+<link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
 
     <!--INTERNAL CSS-->
     <style>
@@ -13,6 +15,7 @@
             height: 100%;
             margin: 0;
             background: #e0e0e0;
+            font-family: 'Ubuntu', sans-serif;
         }
         .container{
             height: 100%;
@@ -22,30 +25,84 @@
             height: 60px;
             width: 60px;
         }
-        .city{
-            height: 150px;
-            width: 150px;
-            padding: 4%;
-            border-radius: 25%;
-        }
+        
         .social{
             height: 20px;
             width: 22px;
         }
         header{
             background-color: rosybrown;
+            position: fixed;
+            width: 100%;
         }
         footer{
             background-color: rosybrown;
+            position: fixed;
+            width: 100%;
+            bottom: 0px;
         }
+
         .SearchBar{
             background: url("https://media-cdn.tripadvisor.com/media/photo-o/14/10/2e/af/india.jpg");
             background-size:100% 100%;
             height: 380px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .header{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logging{
+            margin-right: 10px;
+            text-decoration: none;
+            color: black;
+        }
+        .footer{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .socialMedia{
+            margin-right: 10px;
+        }
+        .ContactUs{
+            margin-left: 10px;
+        }
+        .ContactUs a{
+            text-decoration: none;
+            color:black ;
+        }
+        .showMore a{
+            text-decoration: none;
+            color:black ;
+        }
+        .city{
+            height: 150px;
+            width: 150px;
+            padding: 4%;
+            border-radius: 25%;
+            margin: 2%;
         }
         .Images{
-            margin-left: 15%;
-            margin-right: 15%;
+            margin-left: 100px;
+        }
+
+        input{
+            border: 1px;
+            background-color: #f1f1f1;
+            padding: 10px;
+            font-size: 16px;
+            border-radius: 12px;
+            width: 100%;
+        }
+        .showMore{
+            display: flex;
+            justify-content: center;
+            height: 100px;
         }
 
     </style>
@@ -56,7 +113,7 @@
         <header>
     <div class="header">
             <img class="logo" src="assests/images/logo.png" alt="logo" height="150px" width="200px">
-            <a href="login.html" target="_self">Login</a>
+            <a class="logging" href="login.html" target="_self">Login</a>
         </div>
         </header>
         <!--HEADER ENDS-->
@@ -64,18 +121,21 @@
         <section>
     <div class="content">
         <div class="SearchBar">
-        <input type="text" placeholder="City">
+            <div class="inputText">
+                <input type="text" placeholder="City">
+            </div>
         </div>
 
         <div class="Images">
-        <a href="list.html"><img class="city" src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fe/a2/new-delhi.jpg" alt="delhi" height="300px" width="300px"></a>
+            <a href="list.html">
+        <img class="city" src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fe/a2/new-delhi.jpg" alt="delhi" height="300px" width="300px"></a>
         <img class="city" src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fc/f0/goa.jpg" alt="goa" height="300px" width="300px">
         <img class="city" src="https://media-cdn.tripadvisor.com/media/photo-s/0f/98/f7/df/charminar.jpg" alt="charminar" height="300px" width="300px">
         <img class="city" src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fe/ac/kolkata-calcutta.jpg" alt="calcutta" height="300px" width="300px">
         </div>
-
+        
         <div class="showMore">
-        <a href="#">View more</a>
+        <a href="#">View more >></a>
         </div>
     </div>
     </section>
@@ -86,16 +146,18 @@
             <div class="ContactUs">
             <a href="contact.html" target="_self">Contact Us</a>
             </div>
-
-            <div class="socialMedia">
-                <a class="socail" href="https://www.facebook.com" target="_blank"><img src="assests/images/facebook.png" alt="facebook" height="20px" width="22px"></a>
-                <a class="socail" href="https://www.instagram.com" target="_blank"><img src="assests/images/instagram.png" alt="instagram" height="20px" width="22px"></a>
-                <a class="socail" href="https://twitter.com" target="_blank"><img src="assests/images/twitter.png" alt="twitter" height="20px" width="22px"></a>
-            </div>
-
+            
             <div class="footerText">
                 <p>© 2020 ROOM SEACRH PVT. LTD.</p>
             </div>
+
+            <div class="socialMedia">
+                <a class="social" href="https://www.facebook.com" target="_blank"><img src="assests/images/facebook.png" alt="facebook" height="20px" width="22px"></a>
+                <a class="social" href="https://www.instagram.com" target="_blank"><img src="assests/images/instagram.png" alt="instagram" height="20px" width="22px"></a>
+                <a class="social" href="https://twitter.com" target="_blank"><img src="assests/images/twitter.png" alt="twitter" height="20px" width="22px"></a>
+            </div>
+
+           
         </div>
         </footer>
         <!--FOOTER ENDS-->

@@ -5,6 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>List</title>
+<!--FONT FAMILY-UBUNTU-->
+<link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+
+
     <!--INTERNAL CSS-->
     <style>
         body{
@@ -12,11 +16,15 @@
             width: 100%;
             margin: 0;
             background: #e0e0e0;
+            font-family: 'Ubuntu', sans-serif;
         }
         .container{
             height: 100%;
             width: 100%;
             margin: 0;
+        }
+        section{
+            margin-top: 80px;
         }
         .logo{
             height: 60px;
@@ -32,25 +40,108 @@
         }
         header{
             background-color: rosybrown;
+            position: fixed;
+            width: 100%;
+            top: 0px;
         }
         footer{
             background-color: rosybrown;
+            position: fixed;
+            width: 100%;
+            bottom: 0px;
+        }
+        .header{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logging{
+            margin-right: 10px;
+            text-decoration: none;
+            color: black;
+        }
+        .footer{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .socialMedia{
+            margin-right: 10px;
+        }
+        .ContactUs{
+            margin-left: 10px;
+        }
+        .ContactUs a{
+            text-decoration: none;
+            color:black ;
         }
         .radisson{
             width: 40%;
+            float: left;
+            padding: 10px;
             background-color: rgb(132,136,139);
+            margin: 2%;
+        }
+        .radisson a{
+            text-decoration: none;
+            color: black;
+        }
+        .empty{
+            width: 40%;
+            float: left;
+            padding: 10px;
             margin: 2%;
         }
         .lalit{
             width: 40%;
+            float:left;
+            padding: 10px;
             background-color: rgb(132,136,139);
             margin: 2%;
         }
         .taj{
             width: 40%;
+            float: left;
+            padding: 10px;
             background-color: rgb(132,136,139);
             margin: 2%;
         }
+        ul li{
+            display: inline;
+            
+        }
+        ul li a{
+            text-decoration:none;
+            color: black;
+        }
+        .content{
+            top: 50%;
+        }
+        li{
+            padding: 10px;
+        }
+        .listItems{
+            display: flex;
+            justify-content: center;
+        }
+        #map{
+            display: none;
+        }
+        #hotels img{
+            display: flex;
+            flex-wrap: wrap;
+        }
+        #hotels1{
+            display: flex;
+            justify-content: center;
+        }
+        #hotels2{
+            display: flex;
+            justify-content: center;
+        }
+
+
+
     </style>
 </head>
 <body>
@@ -59,7 +150,7 @@
         <header>
         <div class="header">
             <a href="index.html"><img class="logo" src="assests/images/logo.png" alt="logo" height="150px" width="200px"></a>
-            <a href="login.html" target="_self">Login</a>
+            <a class="logging" href="login.html" target="_self">Login</a>
         </div>
         </header>
         <!--HEADER ENDS-->
@@ -69,14 +160,15 @@
     <div class="content">
         <div class="listItems">
             <ul>
-                <li><a href="#hotels">List View</a></li>
-                <li><a href="#map">Map View</a></li>
+                <li><a href="#hotels1"><b>List View</b></a></li>
+                <li><a href="#map"><b>Map View</b></a></li>
             </ul>
         </div>
 
-        <div id="hotels">
-            <a href="detail.html">
+        <div id="hotels1">
+           
                 <div class="radisson">
+                    <a href="detail.html">
                 <img class="Hotel-images" src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg" alt="Radisson Blu Hotel">
             <h3>Radisson Blu Hotel</h3>
             <p>5 Star</p>
@@ -88,13 +180,16 @@
             <p>4.5 Star</p>
             <p>New Delhi</p>
             </div>
+            </div>
 
+            <div id="hotels2">
             <div class="taj">
                 <img class="Hotel-images" src="https://media-cdn.tripadvisor.com/media/photo-w/1b/4e/9b/11/exterior.jpg" alt="Taj Palace">
             <h3>Taj Palace</h3>
             <p>4.0 Star</p>
             <p>New Delhi</p>
             </div>
+            <div class="empty"></div>
 
         </div>
 
@@ -110,15 +205,21 @@
     <!--FOOTER STARTS-->
     <footer>
     <div class="footer">
+        <div class="ContactUs">
         <a href="contact.html" target="_self">Contact Us</a>
-        <div class="socialMedia">
-            <a class="socail" href="https://www.facebook.com" target="_blank"><img src="assests/images/facebook.png" alt="facebook" height="20px" width="22px"></a>
-            <a class="socail" href="https://www.instagram.com" target="_blank"><img src="assests/images/instagram.png" alt="instagram" height="20px" width="22px"></a>
-            <a class="socail" href="https://twitter.com" target="_blank"><img src="assests/images/twitter.png" alt="twitter" height="20px" width="22px"></a>
-        </div>
+            </div>
+
         <div class="footerText">
             <p>© 2020 ROOM SEACRH PVT. LTD.</p>
         </div>
+
+
+        <div class="socialMedia">
+            <a class="social" href="https://www.facebook.com" target="_blank"><img src="assests/images/facebook.png" alt="facebook" height="20px" width="22px"></a>
+            <a class="social" href="https://www.instagram.com" target="_blank"><img src="assests/images/instagram.png" alt="instagram" height="20px" width="22px"></a>
+            <a class="social" href="https://twitter.com" target="_blank"><img src="assests/images/twitter.png" alt="twitter" height="20px" width="22px"></a>
+        </div>
+        
     </div>
     </footer>
     <!--FOOTER ENDS-->
