@@ -21,6 +21,12 @@
             height: 100%;
             width: 100%;
         }
+        .content{
+            margin-top: 50px;
+            margin-bottom: 50px;
+            display: flex;
+            flex-direction: column;
+        }
         .logo{
             height: 60px;
             width: 60px;
@@ -34,6 +40,7 @@
             background-color: rosybrown;
             position: fixed;
             width: 100%;
+            top: 0px;
         }
         footer{
             background-color: rosybrown;
@@ -67,10 +74,10 @@
             align-items: center;
         }
         .socialMedia{
-            margin-right: 10px;
+            margin-right: 2%;
         }
         .ContactUs{
-            margin-left: 10px;
+            margin-left: 2%;
         }
         .ContactUs a{
             text-decoration: none;
@@ -80,15 +87,33 @@
             text-decoration: none;
             color:black ;
         }
+        .showMore{
+            margin-top: 50px;
+        }
         .city{
             height: 150px;
             width: 150px;
-            padding: 4%;
             border-radius: 25%;
             margin: 2%;
+            box-shadow: 10px 10px 10px grey;
+            
+        }
+        .cityNames{
+            display: none;
+        }
+        .city:hover{
+            filter: brightness(50%);
+        }
+        .city:hover +.cityNames{
+            display: block;
+            color: black;
         }
         .Images{
-            margin-left: 100px;
+            display: flex;
+            justify-content: space-evenly;
+        }
+        .Images a{
+            margin-top: 29px;
         }
 
         input{
@@ -99,11 +124,15 @@
             border-radius: 12px;
             width: 100%;
         }
+        input:focus{
+            outline: none;
+        }
         .showMore{
             display: flex;
             justify-content: center;
             height: 100px;
         }
+        
 
     </style>
 </head>
@@ -132,6 +161,13 @@
         <img class="city" src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fc/f0/goa.jpg" alt="goa" height="300px" width="300px">
         <img class="city" src="https://media-cdn.tripadvisor.com/media/photo-s/0f/98/f7/df/charminar.jpg" alt="charminar" height="300px" width="300px">
         <img class="city" src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fe/ac/kolkata-calcutta.jpg" alt="calcutta" height="300px" width="300px">
+        </div>
+
+        <div class="cityNames">
+            <p>Delhi</p>
+            <p>Goa</p>
+            <p>Charminar</p>
+            <p>Calcutta</p>
         </div>
         
         <div class="showMore">

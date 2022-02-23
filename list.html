@@ -25,6 +25,7 @@
         }
         section{
             margin-top: 80px;
+            margin-bottom: 80px;
         }
         .logo{
             height: 60px;
@@ -66,10 +67,10 @@
             align-items: center;
         }
         .socialMedia{
-            margin-right: 10px;
+            margin-right: 2%;
         }
         .ContactUs{
-            margin-left: 10px;
+            margin-left: 2%;
         }
         .ContactUs a{
             text-decoration: none;
@@ -79,8 +80,12 @@
             width: 40%;
             float: left;
             padding: 10px;
-            background-color: rgb(132,136,139);
+            background-color: lightgray;
             margin: 2%;
+            display: flex;
+        }
+        .radissonDesc{
+            margin-left: 30px;
         }
         .radisson a{
             text-decoration: none;
@@ -96,15 +101,24 @@
             width: 40%;
             float:left;
             padding: 10px;
-            background-color: rgb(132,136,139);
+            background-color: lightgray;
             margin: 2%;
+            display: flex;
+            height: 200px;
+        }
+        .lalitDesc{
+            margin-left: 30px;
         }
         .taj{
             width: 40%;
             float: left;
             padding: 10px;
-            background-color: rgb(132,136,139);
+            background-color: lightgray;
             margin: 2%;
+            display: flex;
+        }
+        .tajDesc{
+            margin-left: 30px;
         }
         ul li{
             display: inline;
@@ -168,26 +182,40 @@
         <div id="hotels1">
            
                 <div class="radisson">
+                    <div class="radissonImage">
                     <a href="detail.html">
                 <img class="Hotel-images" src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg" alt="Radisson Blu Hotel">
-            <h3>Radisson Blu Hotel</h3>
-            <p>5 Star</p>
-            <p>New Delhi</p></div></a>
+                    </a></div>
+                    <div class="radissonDesc">
+                        <a href="detail.html">
+                        <h3>Radisson Blu Hotel</h3>
+                        <p>5.0 Star</p>
+                        <p>New Delhi</p></div></a>
+                    </div>
+                
 
             <div class="lalit">
+                <div class="lalitImage">
                 <img class="Hotel-images" src="https://media-cdn.tripadvisor.com/media/photo-w/15/06/31/5f/facade.jpg" alt="Radisson Blu Hotel">
+            </div>
+            <div class="lalitDesc">
             <h3>The Lalit New Delhi</h3>
             <p>4.5 Star</p>
             <p>New Delhi</p>
+        </div>
             </div>
             </div>
 
             <div id="hotels2">
             <div class="taj">
+                <div class="tajImage">
                 <img class="Hotel-images" src="https://media-cdn.tripadvisor.com/media/photo-w/1b/4e/9b/11/exterior.jpg" alt="Taj Palace">
-            <h3>Taj Palace</h3>
+            </div>
+            <div class="tajDesc">
+                <h3>Taj Palace</h3>
             <p>4.0 Star</p>
             <p>New Delhi</p>
+        </div>
             </div>
             <div class="empty"></div>
 
