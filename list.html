@@ -19,7 +19,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
 
 
-    <!--INTERNAL CSS-->
+    <!--INTERNAL CSS START-->
     <style>
         body {
             height: 100%;
@@ -29,7 +29,7 @@
             font-family: 'Ubuntu', sans-serif;
         }
 
-        .containerr1 {
+        .bodyContainer {
             height: 100%;
             width: 100%;
             margin: 0;
@@ -188,9 +188,6 @@
             align-items: center;
         }
 
-        /* #map {
-            visibility: hidden;
-        } */
 
         #hotels img {
             display: flex;
@@ -214,10 +211,14 @@
         }
         
     </style>
+    <!--INTERNAL CSS END-->
+    
 </head>
 
 <body>
-    <div class="containerr1">
+    <div class="bodyContainer">
+        
+        
         <!--HEADER STARTS-->
         <header>
             <div class="header">
@@ -278,6 +279,8 @@
         <!--SECTION STARTS-->
         <section>
             <div class="content">
+                
+                <!--NAV PILLS USED TO TOGGLE BETWEEN LIST VIEW AND MAP VIEW - START-->
                 <div class="listItems">
                     <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
                         <li class="nav-item" role="presentation">
@@ -290,6 +293,7 @@
                       <div class="tab-content" id="pills-tabContent">
                         <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
                             
+                            <!--HOTELS1 CONTAIN 2 DIV RADISSON AND LALIT - START-->
                             <div id="hotels1">
                                 <div class="radisson">
                                     <div class="radissonImage">
@@ -329,7 +333,10 @@
                                     </div>
                                 </div>
                             </div>
-            
+                             <!--HOTELS1 CONTAIN 2 DIV RADISSON AND LALIT - END-->
+                            
+                            
+                             <!--HOTELS2 CONTAIN 2 DIVS TAJ AND EMPTY(TO MAINTAIN THE FORMAT)- START-->
                             <div id="hotels2">
                                 <div class="taj">
                                     <div class="tajImage">
@@ -348,7 +355,9 @@
                                     </div>
                                 </div>
                                 <div class="empty"></div>
+                                <!--HOTELS2 CONTAIN 2 DIVS TAJ AND EMPTY(TO MAINTAIN THE FORMAT)- START-->
             
+                                
                             </div>
                         </div>
                         <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
@@ -359,75 +368,9 @@
                         </div>
                       </div>
                 </div>
+                <!--NAV PILLS USED TO TOGGLE BETWEEN LIST VIEW AND MAP VIEW - END-->
+                
 
-
-
-                <!-- <div id="hotels1">
-
-                    <div class="radisson">
-                        <div class="radissonImage">
-                            <a href="detail.html">
-                                <img class="Hotel-images"
-                                    src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg"
-                                    alt="Radisson Blu Hotel">
-                            </a>
-                        </div>
-                        <div class="radissonDesc">
-                            <a href="detail.html">
-                                <h3>Radisson Blu Hotel</h3>
-                                <span class="bi bi-star-fill"></span>
-                                <span class="bi bi-star-fill"></span>
-                                <span class="bi bi-star-fill"></span>
-                                <span class="bi bi-star-fill"></span>
-                                <span class="bi bi-star-fill"></span>
-                                <p>New Delhi</p>
-                        </div></a>
-                    </div>
-
-
-                    <div class="lalit">
-                        <div class="lalitImage">
-                            <img class="Hotel-images"
-                                src="https://media-cdn.tripadvisor.com/media/photo-w/15/06/31/5f/facade.jpg"
-                                alt="Radisson Blu Hotel">
-                        </div>
-                        <div class="lalitDesc">
-                            <h3>The Lalit New Delhi</h3>
-                            <span class="bi bi-star-fill"></span>
-                            <span class="bi bi-star-fill"></span>
-                            <span class="bi bi-star-fill"></span>
-                            <span class="bi bi-star-fill"></span>
-                            <span class="bi bi-star-half"></span>
-                            <p>New Delhi</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div id="hotels2">
-                    <div class="taj">
-                        <div class="tajImage">
-                            <img class="Hotel-images"
-                                src="https://media-cdn.tripadvisor.com/media/photo-w/1b/4e/9b/11/exterior.jpg"
-                                alt="Taj Palace">
-                        </div>
-                        <div class="tajDesc">
-                            <h3>Taj Palace</h3>
-                            <span style="color: orange;" class="bi bi-star-fill"></span>
-                            <span style="color: orange;" class="bi bi-star-fill"></span>
-                            <span style="color: orange;" class="bi bi-star-fill"></span>
-                            <span style="color: orange;" class="bi bi-star-fill"></span>
-                            <span class="bi bi-star-fill"></span>
-                            <p>New Delhi</p>
-                        </div>
-                    </div>
-                    <div class="empty"></div>
-
-                </div> -->
-
-                <!-- <div id="map">
-                    <img src="https://cdn.pixabay.com/photo/2018/01/31/05/43/web-3120321_960_720.png" alt="">
-                    <p>MAP VIEW</p>
-                </div> -->
             </div>
         </section>
         <!--SECTION ENDS-->
@@ -436,17 +379,25 @@
         <!--FOOTER STARTS-->
         <footer>
             <div class="footer">
+                
+                <!--CONTACT US BUTTON - START-->
                 <div class="ContactUs">
                     <button type="button" class="btn btn-info btn-sm" data-bs-toggle="modal"
                         data-bs-target="#ContactUsModal">
                         Contact Us</button>
                 </div>
+                <!--CONTACT US BUTTON - END-->
 
+                
+                <!--FOOTER TEXT - START-->
                 <div class="footerText">
                     <p>© 2020 ROOM SEACRH PVT. LTD.</p>
                 </div>
+                <!--FOOTER TEXT - END-->
 
-
+                
+                
+                <!--SOCIAL MEDIA ICON LINK - START-->
                 <div class="socialMedia">
                     <a class="social" href="https://www.facebook.com" target="_blank"><img
                             src="assests/images/facebook.png" alt="facebook" height="20px" width="22px"></a>
@@ -455,6 +406,8 @@
                     <a class="social" href="https://twitter.com" target="_blank"><img src="assests/images/twitter.png"
                             alt="twitter" height="20px" width="22px"></a>
                 </div>
+                <!--SOCIAL MEDIA ICON LINK - END-->
+                
 
             </div>
         </footer>
@@ -494,10 +447,13 @@
         </div>
         <!--CONTACT US - MODAL ENDS-->
 
+        
     </div>
+    <!--BOOTSTRAP JAVASCRIPT CDN-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
         crossorigin="anonymous"></script>
-</body>
+
+    </body>
 
 </html>
