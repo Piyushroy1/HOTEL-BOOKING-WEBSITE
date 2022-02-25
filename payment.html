@@ -13,7 +13,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
 
 
-     <!--INTERNAL CSS-->
+     <!--INTERNAL CSS START-->
      <style>
         body{
             height: 100%;
@@ -26,7 +26,7 @@
             margin-bottom: 150px;
             margin-top: 150px;
         }
-        .containerr1{
+        .bodyContainer{
             height: 100%;
             width: 100%;
             margin: 0;
@@ -125,11 +125,12 @@
             flex-direction: column;
             justify-content: center;
         }
-
         </style>
+    <!--INTERNAL CSS END-->
+    
 </head>
 <body>
-    <div class="containerr1">
+    <div class="bodyContainer">
     <!--HEADER STARTS-->
     <header>
     <div class="header">
@@ -188,67 +189,103 @@
 
     <!--SECTION STARTS-->
     <section>
+        
     <div class="content">
 
+        <!--RADISSON IMAGE - START-->
         <div class="hotel">
             <div class="hotelImage">
         <img class="Radisson-resize" src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg"
-        
         alt="Radisson Blu Hotel">
         </div>
+            <!--RADISSON IMAGE - END-->
+            
+            
+         <!--RADISSON HOTEL DESCRIPTION - START-->
         <div class="hotelDesc">
         <h2>Radisson Blu Hotel</h2>
         <p>#38 of 1289 hotels in New Delhi</p>
         <p>National Highway 8, New Delhi 110017 India</p>
         </div>
         </div>
-
+        <!--RADISSON HOTEL DESCRIPTION - END-->
+        
+        
+        <!--PAYMENT DETAILS OF THE CUSTOMER START-->
         <div class="paymentDetails">
+            
+            
+            
 
+            <!--CUSTOMER PERSONAL DETAILS START-->
         <div class="customerDetails">
             <p><b>Name: </b>John Doe</p>
             <p><b>Number of Adults: </b>2</p>
             <p><b>Check-in Date: </b>06/06/2020</p>
             <p><b>Check-out Date: </b>08/06/2020</p>
         </div>
+            <!--CUSTOMER PEROSONAL DETAILS END-->
 
+            
+            <!--CUSTOMER TARIFF DETAILS START-->
         <div class="Tariff">
             <p><b>Tariff Breakdown: </b>Rs. 1000 x 2 Adults x 5 Nights</p>
             <p><b>Total Amount: </b>Rs.10000</p>
         </div>
-
+            <!--CUSTOMER TARIFF DETAILS END-->
+            
+            
+        <!--PAYMENT LINK BUTTON START-->
         <div class="paymentLink">
             <button type="button" class="btn btn-success" disabled>Pay Now</button>
         </div>
+            <!--PAYMENT LINK BUTTON END-->
+            
+            
+            
     </div>
+        <!--RADISSON HOTEL DESCRIPTION - END-->
+        
+        
     </div>
     </section>
+        <!--SECTION ENDS-->
 
 
 
         <!--FOOTER STARTS-->
         <footer>
         <div class="footer">
+            
+            <!--CONTACT US BUTTON - START-->
             <div class="ContactUs">
                 <button type="button" class="btn btn-info btn-sm"
                 data-bs-toggle="modal" data-bs-target="#ContactUsModal">
                 Contact Us</button>
                 </div>
-
+            <!--CONTACT US BUTTON - END-->
+            
+            
+             <!--FOOTER TEXT - START-->
             <div class="footerText">
                 <p>© 2020 ROOM SEACRH PVT. LTD.</p>
             </div>
-
-
+                <!--FOOTER TEXT - END-->
+            
+            
+            <!--SOCIAL MEDIA ICON LINK - START-->
             <div class="socialMedia">
                 <a class="social" href="https://www.facebook.com" target="_blank"><img src="assests/images/facebook.png" alt="facebook" height="20px" width="22px"></a>
                 <a class="social" href="https://www.instagram.com" target="_blank"><img src="assests/images/instagram.png" alt="instagram" height="20px" width="22px"></a>
                 <a class="social" href="https://twitter.com" target="_blank"><img src="assests/images/twitter.png" alt="twitter" height="20px" width="22px"></a>
             </div>
+            <!--SOCIAL MEDIA ICON LINK - END-->
             
         </div>
         </footer>
         <!--FOOTER ENDS-->
+        
+        
 
         <!--CONTACT US - MODAL STARTS-->
 <div class="modal fade" id="ContactUsModal" tabindex="-1" aria-labelledby="ContactUsModalLabel" aria-hidden="true">
@@ -282,6 +319,9 @@
 
 
         </div>
+    
+    <!--BOOTSTRAP JAVASCRIPT CDN-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-</body>
+
+    </body>
 </html>
